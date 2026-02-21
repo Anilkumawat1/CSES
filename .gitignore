@@ -1,0 +1,24 @@
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# MacOS
+.DS_Store
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.eclipse
+
+# Build output
+out/
+build/
+target/
+
+# Logs
+*.log
