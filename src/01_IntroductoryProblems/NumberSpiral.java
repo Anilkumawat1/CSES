@@ -103,14 +103,34 @@ class NumberSpiral {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
+        int t = nextInt();
+        StringBuilder builder = new StringBuilder();
 
-        // prl(answer);            single answer
-        // prl(a, b);              two values on one line
-        // pra(arr);               array space-separated on one line
-        // prla(arr);              each element on its own line
-        // prGrid(grid);           2-D grid
-        // buf(x); ... flush();    bulk loop — fastest
+        while (t-- > 0) {
+            long x = nextLong();
+            long y = nextLong();
+
+            long z = Math.max(x, y);
+            long ans;
+
+            if ((z & 1) == 0) {  // even
+                if (x == z) {
+                    ans = z * z - y + 1;
+                } else {
+                    ans = (z - 1) * (z - 1) + x;
+                }
+            } else {             // odd
+                if (y == z) {
+                    ans = z * z - x + 1;
+                } else {
+                    ans = (z - 1) * (z - 1) + y;
+                }
+            }
+
+            builder.append(ans).append('\n');
+        }
+
+        out.print(builder);
     }
 
     public static void main(String[] args) throws IOException {
@@ -120,3 +140,4 @@ class NumberSpiral {
         out.flush();
     }
 }
+

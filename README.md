@@ -32,7 +32,7 @@
 | 3 | Repetitions| `01_IntroductoryProblems/Repetitions.java` | ☑ |
 | 4 | Increasing Array| `01_IntroductoryProblems/IncreasingArray.java` | ☑ |
 | 5 | Permutations| `01_IntroductoryProblems/Permutations.java` | ☑ |
-| 6 | Number Spiral| `01_IntroductoryProblems/06_NumberSpiral.java` | ☐ |
+| 6 | Number Spiral| `01_IntroductoryProblems/NumberSpiral.java` | ☑ |
 | 7 | Two Knights| `01_IntroductoryProblems/07_TwoKnights.java` | ☐ |
 | 8 | Two Sets| `01_IntroductoryProblems/08_TwoSets.java` | ☐ |
 | 9 | Bit Strings| `01_IntroductoryProblems/09_BitStrings.java` | ☐ |
@@ -536,7 +536,7 @@
 
 | # | Category | Total | Solved |
 |---|---|---|---|
-| 1 | Introductory Problems | 24 | 5 |
+| 1 | Introductory Problems | 24 | 6 |
 | 2 | Sorting and Searching | 35 | 0 |
 | 3 | Dynamic Programming | 23 | 0 |
 | 4 | Graph Algorithms | 36 | 0 |
@@ -554,7 +554,7 @@
 | 16 | Counting Problems | 18 | 0 |
 | 17 | Additional Problems I | 30 | 0 |
 | 18 | Additional Problems II | 30 | 0 |
-| — | **TOTAL** | **400** | **5** |
+| — | **TOTAL** | **400** | **6** |
 
 ---
 
