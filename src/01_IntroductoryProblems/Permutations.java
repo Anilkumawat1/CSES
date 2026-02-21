@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class IncreasingArray {
+class Permutations {
 
     static final long MOD = 1_000_000_007L;
     static final int[] dx = {-1, 1, 0, 0};
@@ -103,7 +103,26 @@ class IncreasingArray {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
+        int n = nextInt();
+        if(n==1){
+            out.print('1');
+        }
+        else if(n<4){
+            out.print("NO SOLUTION");
+        }else{
+            StringBuilder sb = new StringBuilder();
+            int count = 2;
+            for(int i=1;i<=n/2;i++){
+                sb.append(count).append(' ');
+                count+=2;
+            }
+            count = 1;
+            for(int i=1;i<=n/2+n%2;i++){
+                sb.append(count).append(' ');
+                count+=2;
+            }
+            out.print(sb);
+        }
 
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
@@ -116,7 +135,13 @@ class IncreasingArray {
     public static void main(String[] args) throws IOException {
         br = new BufferedReader(new InputStreamReader(System.in));
         out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
-        new IncreasingArray().solve();
+        new Permutations().solve();
         out.flush();
     }
 }
+
+//1 3 5 2 4
+//1 2 3 4
+//1 3 2 4
+//1 2 3 4 5 6
+//1 3 5 2
