@@ -103,7 +103,18 @@ class WeirdAlgorithm {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
+        long n = nextLong();
+        StringBuilder sb = new StringBuilder();
+        while (n != 1){
+            sb.append(n).append(' ');
+            if((n&1)==0){
+                n = n/2;
+            }else{
+                n = n*3 + 1;
+            }
+        }
+        sb.append(n);
+        out.print(sb);
 
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
