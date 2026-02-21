@@ -103,8 +103,18 @@ class Repetitions {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
-
+        String st = nextStr();
+        int ans = 1;
+        int count = 1;
+        for(int i=1;i<st.length();i++){
+            if(st.charAt(i)==st.charAt(i-1)){
+                count++;
+            }else{
+                count=1;
+            }
+            ans = Math.max(count,ans);
+        }
+        out.print(ans);
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
         // pra(arr);               array space-separated on one line

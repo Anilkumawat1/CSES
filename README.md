@@ -29,7 +29,7 @@
 |---|---|---|---|
 | 1 | Weird Algorithm| `01_IntroductoryProblems/WeirdAlgorithm.java` | ☑ |
 | 2 | Missing Number| `01_IntroductoryProblems/MissingNumber.java` | ☑ |
-| 3 | Repetitions| `01_IntroductoryProblems/03_Repetitions.java` | ☐ |
+| 3 | Repetitions| `01_IntroductoryProblems/Repetitions.java` | ☑ |
 | 4 | Increasing Array| `01_IntroductoryProblems/04_IncreasingArray.java` | ☐ |
 | 5 | Permutations| `01_IntroductoryProblems/05_Permutations.java` | ☐ |
 | 6 | Number Spiral| `01_IntroductoryProblems/06_NumberSpiral.java` | ☐ |
@@ -536,7 +536,7 @@
 
 | # | Category | Total | Solved |
 |---|---|---|---|
-| 1 | Introductory Problems | 24 | 2 |
+| 1 | Introductory Problems | 24 | 3 |
 | 2 | Sorting and Searching | 35 | 0 |
 | 3 | Dynamic Programming | 23 | 0 |
 | 4 | Graph Algorithms | 36 | 0 |
@@ -554,7 +554,7 @@
 | 16 | Counting Problems | 18 | 0 |
 | 17 | Additional Problems I | 30 | 0 |
 | 18 | Additional Problems II | 30 | 0 |
-| — | **TOTAL** | **400** | **2** |
+| — | **TOTAL** | **400** | **3** |
 
 ---
 
