@@ -103,8 +103,13 @@ class MissingNumber {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
-
+        int n = nextInt();
+        long sum = 0;
+        for(int i=0;i<n-1;i++){
+            sum += nextLong();
+        }
+        long ans = ((long)n*(n+1)/2) - sum;
+        out.print(ans);
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
         // pra(arr);               array space-separated on one line
