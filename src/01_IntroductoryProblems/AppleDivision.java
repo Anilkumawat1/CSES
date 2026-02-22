@@ -103,7 +103,12 @@ class AppleDivision {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
+        int n = nextInt();
+        long arr[] = new long[n];
+        for(int i=0;i<n;i++){
+            arr[i] = nextLong();
+        }
+        out.print(rec(0,n,0,arr));
 
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
@@ -111,6 +116,15 @@ class AppleDivision {
         // prla(arr);              each element on its own line
         // prGrid(grid);           2-D grid
         // buf(x); ... flush();    bulk loop — fastest
+    }
+
+    private long rec(int i, int n, long sum, long[] arr) {
+        if(i==n){
+            return Math.abs(sum);
+        }
+        long ans1 = rec(i+1,n,sum+arr[i],arr);
+        long ans2 = rec(i+1,n,sum-arr[i],arr);
+        return Math.min(ans1,ans2);
     }
 
     public static void main(String[] args) throws IOException {
