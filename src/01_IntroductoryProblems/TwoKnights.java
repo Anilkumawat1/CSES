@@ -103,8 +103,14 @@ class TwoKnights {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
-
+        int n = nextInt();
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int i=1;i<=n;i++) {
+            long k = i;
+            long ans = (k * k) * (k * k - 1) / 2 - 4 * (k - 1) * (k - 2);
+            stringBuilder.append(ans).append("\n");
+        }
+        out.print(stringBuilder);
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
         // pra(arr);               array space-separated on one line
