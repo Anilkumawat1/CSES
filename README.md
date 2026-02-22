@@ -41,7 +41,7 @@
 | 12 | Palindrome Reorder| `01_IntroductoryProblems/PalindromeReorder.java` | ☑ |
 | 13 | Gray Code| `01_IntroductoryProblems/GrayCode.java` | ☑ |
 | 14 | Tower of Hanoi| `01_IntroductoryProblems/TowerOfHanoi.java` | ☑ |
-| 15 | Creating Strings| `01_IntroductoryProblems/15_CreatingStrings.java` | ☐ |
+| 15 | Creating Strings| `01_IntroductoryProblems/CreatingStrings.java` | ☑ |
 | 16 | Apple Division| `01_IntroductoryProblems/16_AppleDivision.java` | ☐ |
 | 17 | Chessboard and Queens| `01_IntroductoryProblems/17_ChessboardAndQueens.java` | ☐ |
 | 18 | Raab Game I| `01_IntroductoryProblems/18_RaabGameI.java` | ☐ |
@@ -536,7 +536,7 @@
 
 | # | Category | Total | Solved |
 |---|---|---|---|
-| 1 | Introductory Problems | 24 | 14 |
+| 1 | Introductory Problems | 24 | 15 |
 | 2 | Sorting and Searching | 35 | 0 |
 | 3 | Dynamic Programming | 23 | 0 |
 | 4 | Graph Algorithms | 36 | 0 |
@@ -554,7 +554,7 @@
 | 16 | Counting Problems | 18 | 0 |
 | 17 | Additional Problems I | 30 | 0 |
 | 18 | Additional Problems II | 30 | 0 |
-| — | **TOTAL** | **400** | **14** |
+| — | **TOTAL** | **400** | **15** |
 
 ---
 

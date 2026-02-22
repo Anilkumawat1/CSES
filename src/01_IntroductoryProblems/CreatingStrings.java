@@ -103,14 +103,31 @@ class CreatingStrings {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
+        String str = nextStr();
+        int arr[] = new int[26];
+        for(int i=0;i<str.length();i++){
+            arr[str.charAt(i)-'a']++;
+        }
+        StringBuilder stringBuilder = new StringBuilder();
+        out.println(rec(str.length(),"",arr,stringBuilder));
 
-        // prl(answer);            single answer
-        // prl(a, b);              two values on one line
-        // pra(arr);               array space-separated on one line
-        // prla(arr);              each element on its own line
-        // prGrid(grid);           2-D grid
-        // buf(x); ... flush();    bulk loop — fastest
+        out.print(stringBuilder);
+
+    }
+    public long rec(int n,String s,int arr[],StringBuilder stringBuilder){
+        if(s.length()==n){
+            stringBuilder.append(new String(s)).append("\n");
+            return 1;
+        }
+        long ans = 0;
+        for(int i=0;i<26;i++){
+            if(arr[i]!=0){
+                arr[i]--;
+                ans+=rec(n,s+(char)(i+'a'),arr,stringBuilder);
+                arr[i]++;
+            }
+        }
+        return ans;
     }
 
     public static void main(String[] args) throws IOException {
