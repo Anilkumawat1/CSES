@@ -103,8 +103,24 @@ class CoinPiles {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
-
+        int n = nextInt();
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int i=0;i<n;i++){
+            long x = nextLong();
+            long y = nextLong();
+            if((x+y)%3==0&&Math.max(x,y)<=2*Math.min(x,y)){
+                stringBuilder.append("YES").append("\n");
+            }else{
+                stringBuilder.append("NO").append("\n");
+            }
+        }
+        out.print(stringBuilder);
+//        5 5 6 6 7 7 8 8 9 9 10 10
+//        3 4 4 5 5 6 6 7 7 8 9 8
+//        2 2 2 4 4 4 5 5 6 6 7 7
+//            1 2 3 2
+//            0 0 2 1
+//                0 0
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
         // pra(arr);               array space-separated on one line
