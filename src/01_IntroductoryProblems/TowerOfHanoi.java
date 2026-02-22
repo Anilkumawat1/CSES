@@ -103,14 +103,28 @@ class TowerOfHanoi {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
-
+        int n = nextInt();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append((long) Math.pow(2,n)-1).append("\n");
+        toh(stringBuilder,n,1,2,3);
+        out.print(stringBuilder);
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
         // pra(arr);               array space-separated on one line
         // prla(arr);              each element on its own line
         // prGrid(grid);           2-D grid
         // buf(x); ... flush();    bulk loop — fastest
+    }
+
+    private void toh(StringBuilder stringBuilder, int n, int a, int b, int c) {
+        if(n==1){
+            stringBuilder.append(a).append(" ").append(c).append("\n");
+            return;
+        }
+
+        toh(stringBuilder,n-1,a,c,b);
+        stringBuilder.append(a).append(" ").append(c).append("\n");
+        toh(stringBuilder,n-1,b,a,c);
     }
 
     public static void main(String[] args) throws IOException {
