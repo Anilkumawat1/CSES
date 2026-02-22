@@ -103,8 +103,46 @@ class TwoSets {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
-
+        int n = nextInt();
+        StringBuilder stringBuilder = new StringBuilder();
+        if((n&1)==1){
+            n--;
+            if(((n/2)&1)==1){
+                stringBuilder.append("YES").append("\n");
+                stringBuilder.append(n/2 + 1).append("\n");
+                for(int i=0;i<=n/4;i++){
+                    stringBuilder.append(i+1).append(" ");
+                    stringBuilder.append(n-i).append(" ");
+                }
+                stringBuilder.append("\n");
+                stringBuilder.append(n/2).append("\n");
+                for(int i=n/4+1;i<n/2;i++){
+                    stringBuilder.append(i+1).append(" ");
+                    stringBuilder.append(n-i).append(" ");
+                }
+                stringBuilder.append(n+1);
+            }else{
+                stringBuilder.append("NO");
+            }
+        }else{
+            if(((n/2)&1)==1){
+                stringBuilder.append("NO");
+            }else{
+                stringBuilder.append("YES").append("\n");
+                stringBuilder.append(n/2).append("\n");
+                for(int i=0;i<n/4;i++){
+                    stringBuilder.append(i+1).append(" ");
+                    stringBuilder.append(n-i).append(" ");
+                }
+                stringBuilder.append("\n");
+                stringBuilder.append(n/2).append("\n");
+                for(int i=n/4;i<n/2;i++){
+                    stringBuilder.append(i+1).append(" ");
+                    stringBuilder.append(n-i).append(" ");
+                }
+            }
+        }
+        out.print(stringBuilder);
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
         // pra(arr);               array space-separated on one line
