@@ -103,7 +103,12 @@ class ChessboardAndQueens {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
+        char arr[][] = new char[8][8];
+        for(int i=0;i<8;i++){
+            String str = nextStr();
+            arr[i] = str.toCharArray();
+        }
+        out.print(rec(arr,0));
 
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
@@ -111,6 +116,50 @@ class ChessboardAndQueens {
         // prla(arr);              each element on its own line
         // prGrid(grid);           2-D grid
         // buf(x); ... flush();    bulk loop — fastest
+    }
+
+    private int rec(char[][] arr, int x) {
+        if(x==8){
+            return 1;
+        }
+        int ans = 0;
+        for(int i=0;i<8;i++){
+            if(arr[x][i]=='.'&&isPossible(arr,x,i)){
+                arr[x][i] = '@';
+                ans+=rec(arr,x+1);
+                arr[x][i] = '.';
+            }
+        }
+        return ans;
+    }
+
+    private boolean isPossible(char[][] arr, int x, int y) {
+        int tempx = x;
+        int tempy = y;
+        while(tempx>=0&&tempy>=0){
+            if(arr[tempx][tempy]=='@')
+                return false;
+            tempx--;
+            tempy--;
+        }
+        tempx = x;
+        tempy = y;
+        while(tempx>=0&&tempy<8){
+            if(arr[tempx][tempy]=='@')
+                return false;
+            tempx--;
+            tempy++;
+        }
+        tempx = x;
+        tempy = y;
+        while(tempx>=0){
+            if(arr[tempx][tempy]=='@')
+                return false;
+            tempx--;
+        }
+
+        return true;
+
     }
 
     public static void main(String[] args) throws IOException {

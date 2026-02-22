@@ -43,7 +43,7 @@
 | 14 | Tower of Hanoi| `01_IntroductoryProblems/TowerOfHanoi.java` | ☑ |
 | 15 | Creating Strings| `01_IntroductoryProblems/CreatingStrings.java` | ☑ |
 | 16 | Apple Division| `01_IntroductoryProblems/AppleDivision.java` | ☑ |
-| 17 | Chessboard and Queens| `01_IntroductoryProblems/17_ChessboardAndQueens.java` | ☐ |
+| 17 | Chessboard and Queens| `01_IntroductoryProblems/ChessboardAndQueens.java` | ☑ |
 | 18 | Raab Game I| `01_IntroductoryProblems/18_RaabGameI.java` | ☐ |
 | 19 | Mex Grid Construction| `01_IntroductoryProblems/19_MexGridConstruction.java` | ☐ |
 | 20 | Knight Moves Grid| `01_IntroductoryProblems/20_KnightMovesGrid.java` | ☐ |
@@ -536,7 +536,7 @@
 
 | # | Category | Total | Solved |
 |---|---|---|---|
-| 1 | Introductory Problems | 24 | 16 |
+| 1 | Introductory Problems | 24 | 17 |
 | 2 | Sorting and Searching | 35 | 0 |
 | 3 | Dynamic Programming | 23 | 0 |
 | 4 | Graph Algorithms | 36 | 0 |
@@ -554,7 +554,7 @@
 | 16 | Counting Problems | 18 | 0 |
 | 17 | Additional Problems I | 30 | 0 |
 | 18 | Additional Problems II | 30 | 0 |
-| — | **TOTAL** | **400** | **16** |
+| — | **TOTAL** | **400** | **17** |
 
 ---
 
