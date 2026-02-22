@@ -103,8 +103,14 @@ class TrailingZeros {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
-
+        long n = nextLong();
+        long divisor = 5;
+        long ans = 0;
+        while(n/divisor!=0){
+            ans+=n/divisor;
+            divisor*=5;
+        }
+        out.print(ans);
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
         // pra(arr);               array space-separated on one line
