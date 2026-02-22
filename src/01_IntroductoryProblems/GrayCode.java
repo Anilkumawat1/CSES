@@ -103,7 +103,26 @@ class GrayCode {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
+        int n = nextInt();
+        ArrayList<String> list = new ArrayList<>();
+        list.add("0");
+        list.add("1");
+        for(int i=1;i<n;i++){
+            ArrayList<String> newList = new ArrayList<>();
+            for(String st : list){
+                newList.add(st+"0");
+            }
+            for(int j=list.size()-1;j>=0;j--){
+                newList.add(list.get(j)+"1");
+            }
+            list = newList;
+        }
+        StringBuilder stringBuilder = new StringBuilder();
+        for(String st : list){
+            stringBuilder.append(st).append("\n");
+        }
+        out.print(stringBuilder);
+
 
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
