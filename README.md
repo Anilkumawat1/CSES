@@ -38,7 +38,7 @@
 | 9 | Bit Strings| `01_IntroductoryProblems/BitStrings.java` | ☑ |
 | 10 | Trailing Zeros| `01_IntroductoryProblems/TrailingZeros.java` | ☑ |
 | 11 | Coin Piles| `01_IntroductoryProblems/CoinPiles.java` | ☑ |
-| 12 | Palindrome Reorder| `01_IntroductoryProblems/12_PalindromeReorder.java` | ☐ |
+| 12 | Palindrome Reorder| `01_IntroductoryProblems/PalindromeReorder.java` | ☑ |
 | 13 | Gray Code| `01_IntroductoryProblems/13_GrayCode.java` | ☐ |
 | 14 | Tower of Hanoi| `01_IntroductoryProblems/14_TowerOfHanoi.java` | ☐ |
 | 15 | Creating Strings| `01_IntroductoryProblems/15_CreatingStrings.java` | ☐ |
@@ -536,7 +536,7 @@
 
 | # | Category | Total | Solved |
 |---|---|---|---|
-| 1 | Introductory Problems | 24 | 11 |
+| 1 | Introductory Problems | 24 | 12 |
 | 2 | Sorting and Searching | 35 | 0 |
 | 3 | Dynamic Programming | 23 | 0 |
 | 4 | Graph Algorithms | 36 | 0 |
@@ -554,7 +554,7 @@
 | 16 | Counting Problems | 18 | 0 |
 | 17 | Additional Problems I | 30 | 0 |
 | 18 | Additional Problems II | 30 | 0 |
-| — | **TOTAL** | **400** | **11** |
+| — | **TOTAL** | **400** | **12** |
 
 ---
 

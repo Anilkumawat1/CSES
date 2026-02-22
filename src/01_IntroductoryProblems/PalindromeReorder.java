@@ -103,7 +103,48 @@ class PalindromeReorder {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
+        String str = nextStr();
+        int arr[] = new int[26];
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int i=0;i<str.length();i++){
+            arr[str.charAt(i)-'A']++;
+        }
+        int oddCount = 0;
+        int odd = -1;
+        for(int i=0;i<26;i++){
+            if((arr[i]&1)==1){
+                odd = i;
+                oddCount++;
+            }
+        }
+        if(((str.length()&1)==1&&oddCount!=1) || ((str.length()&1)==0&&oddCount!=0)){
+            stringBuilder.append("NO SOLUTION");
+        }else{
+            for(int i=0;i<arr.length;i++){
+                if(i==odd){
+                    continue;
+                }
+                for(int j=0;j<arr[i]/2;j++) {
+                    stringBuilder.append((char) (i+'A'));
+                }
+            }
+            if(odd!=-1){
+                for(int i=0;i<arr[odd];i++){
+                    stringBuilder.append((char) (odd+'A'));
+                }
+            }
+
+            for(int i=25;i>=0;i--){
+                if(i==odd){
+                    continue;
+                }
+                for(int j=0;j<arr[i]/2;j++) {
+                    stringBuilder.append((char) (i+'A'));
+                }
+            }
+
+        }
+        out.print(stringBuilder);
 
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
