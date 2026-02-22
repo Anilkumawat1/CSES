@@ -35,7 +35,7 @@
 | 6 | Number Spiral| `01_IntroductoryProblems/NumberSpiral.java` | ☑ |
 | 7 | Two Knights| `01_IntroductoryProblems/TwoKnights.java` | ☑ |
 | 8 | Two Sets| `01_IntroductoryProblems/TwoSets.java` | ☑ |
-| 9 | Bit Strings| `01_IntroductoryProblems/09_BitStrings.java` | ☐ |
+| 9 | Bit Strings| `01_IntroductoryProblems/BitStrings.java` | ☑ |
 | 10 | Trailing Zeros| `01_IntroductoryProblems/10_TrailingZeros.java` | ☐ |
 | 11 | Coin Piles| `01_IntroductoryProblems/11_CoinPiles.java` | ☐ |
 | 12 | Palindrome Reorder| `01_IntroductoryProblems/12_PalindromeReorder.java` | ☐ |
@@ -536,7 +536,7 @@
 
 | # | Category | Total | Solved |
 |---|---|---|---|
-| 1 | Introductory Problems | 24 | 8 |
+| 1 | Introductory Problems | 24 | 9 |
 | 2 | Sorting and Searching | 35 | 0 |
 | 3 | Dynamic Programming | 23 | 0 |
 | 4 | Graph Algorithms | 36 | 0 |
@@ -554,7 +554,7 @@
 | 16 | Counting Problems | 18 | 0 |
 | 17 | Additional Problems I | 30 | 0 |
 | 18 | Additional Problems II | 30 | 0 |
-| — | **TOTAL** | **400** | **8** |
+| — | **TOTAL** | **400** | **9** |
 
 ---
 

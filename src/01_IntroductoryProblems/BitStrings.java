@@ -103,7 +103,8 @@ class BitStrings {
 
     // ── Solution ──────────────────────────────────────────────────
     void solve() throws IOException {
-        // TODO: implement solution
+        int n = nextInt();
+        out.print(power(2,n,MOD));
 
         // prl(answer);            single answer
         // prl(a, b);              two values on one line
